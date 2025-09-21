@@ -30,4 +30,13 @@ for pokemon in pokemon_rows:
     for pokemon_type in pokemon_data[2].find_all("a"):
         types.append(pokemon_type.getText())
     
-    print(types)
+    total = pokemon_data[3].getText()
+    hp = pokemon_data[4].getText()
+    attack = pokemon_data[5].getText()
+    defense = pokemon_data[6].getText()
+    special_attack = pokemon_data[7].getText()
+    special_speed = pokemon_data[8].getText()
+    speed = pokemon_data[9].getText()
+
+    print(id, name, avatar, types)
+    print(total, hp, attack, defense, special_attack, special_speed, speed)
